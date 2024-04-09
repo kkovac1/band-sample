@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+$primary-color: #f0b2ee;
+
+body {
+  margin: 0;
+  font-family: "Source Code Pro", monospace;
+  background-color: black;
+  color: #ffffff;
+  font-size: 18px;
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(0, 0, 0, 1) 0%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+}
+
+.btn-primary {
+  color: black;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

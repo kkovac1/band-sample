@@ -1,0 +1,36 @@
+<app-nav />
+
+<div class="flex justify-content-center mt-4">
+  <section class="flex flex-column align-items-center text-3xl">
+    <span>KONTAKT</span>
+
+    <div class="flex flex-column align-items-center my-3">
+      <span>IMATE PITANJA?</span>
+      <span>KONTAKTIRAJTE NAS!</span>
+    </div>
+
+    <div class="flex flex-column align-items-center text-lg">
+      <span>band&#64;gmail.com</span>
+      <span>+385 99 123 4567 (Ivana)</span>
+      <span>F I Y</span>
+    </div>
+  </section>
+
+  <section
+    [formGroup]="contactForm"
+    id="contactForm"
+    class="flex flex-column align-items-center"
+  >
+    <span class="mb-3 text-3xl">KONTAKT OBRAZAC</span>
+    <input formControlName="name" type="text" placeholder="Ime" />
+    <input formControlName="email" type="email" placeholder="Email" />
+    <textarea
+      formControlName="message"
+      class="w-full"
+      placeholder="Poruka"
+    ></textarea>
+    <button class="btn-primary mt-2" (click)="sendEmail()">Pošalji</button>
+  </section>
+</div>
+
+<app-footer />

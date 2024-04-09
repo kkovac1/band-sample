@@ -1,0 +1,20 @@
+<app-nav />
+
+<section class="flex flex-column align-items-center relative">
+  <h1>Vaši kreatori zabave</h1>
+
+  <div class="member-list">
+    @for (member of memberList; track member.name) {
+    <div class="member flex flex-column align-items-center relative p-3">
+      <div
+        class="member-description flex flex-column align-items-center absolute py-3"
+      >
+        <span class="font-bold">{{ member.name | uppercase }}</span>
+        <span>{{ member.role | lowercase }}</span>
+      </div>
+    </div>
+    }
+  </div>
+</section>
+
+<app-footer />

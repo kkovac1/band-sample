@@ -1,0 +1,25 @@
+$primary-color: #f0b2ee;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+  overflow: hidden;
+  font-size: 35px;
+
+  li {
+    a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+a.active {
+  color: $primary-color !important;
+}

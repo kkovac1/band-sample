@@ -1,0 +1,31 @@
+$primary-color: #f0b2ee;
+
+:host {
+  display: block;
+}
+
+section {
+  margin: 0 2rem;
+  padding: 6rem 5rem;
+}
+
+#contactForm {
+  box-shadow: #454545 0 0 30px 0;
+
+  input,
+  textarea {
+    color: white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: border-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<nav>
+  <ul class="flex justify-content-center">
+    @for (item of navItems; track item.title) {
+    <li class="uppercase mx-3">
+      <a
+        [routerLink]="item.link"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >{{ item.title }}</a
+      >
+    </li>
+    }
+  </ul>
+</nav>
